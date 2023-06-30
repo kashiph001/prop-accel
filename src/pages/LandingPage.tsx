@@ -316,7 +316,7 @@ const LandingPage: React.FC = () => {
         className="container flex items-center flex-col mt-20"
         style={footerStyle}
       >
-        <div className="w-1/2 border border-[0.5px] border-[#7A3199] mt-10  text-center">
+        <div className="w-1/2  mt-10  text-center">
           <div className="flex  items-center flex-col ">
             <h4 className="text-4xl font-bold leading-tight">
               We have what you&#39;re looking for

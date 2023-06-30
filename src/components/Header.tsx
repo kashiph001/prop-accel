@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <div>
           <img className="w-12" src={logo} alt="company-logo" />
         </div>
-        <div className="">
+        <div className="w-1/2">
           <ul className="flex item-center gap-[10vw]">
             <li>
               <a className="text-white hover:text-red-500" href="#">
