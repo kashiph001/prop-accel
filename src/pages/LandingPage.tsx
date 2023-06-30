@@ -10,13 +10,20 @@ import bar from "../assets/Images/bar.png";
 import Radio from "../assets/Images/Radio.png";
 import Lolla from "../assets/Images/Lolla.png";
 import stars from "../assets/Images/stars.png";
+import footerBg from "../assets/Images/Footerbg.png";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const LandingPage: React.FC = () => {
   const divStyle = {
     backgroundImage: `url(${left})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "auto",
+  };
+  const footerStyle = {
+    backgroundImage: `url(${footerBg})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
   };
   const backgroundMike = {
     backgroundImage: `url(${mikeBackground})`,
@@ -28,7 +35,6 @@ const LandingPage: React.FC = () => {
     backgroundImage: `url(${bar})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "auto",
-    // backgroundPosition: "top right",
   };
   const buttonStyle = {
     color: "white",
@@ -44,6 +50,16 @@ const LandingPage: React.FC = () => {
     color: "white",
     fontWeight: "bold",
     fontSize: "18px",
+    width: "237px",
+    height: "60px",
+    padding: "17px 56px 25.86053466796875px 55px",
+    borderRadius: "10px",
+    background: "linear-gradient(90deg, #4776E6 0%, #8E54E9 100%)",
+  };
+  const startedNow = {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: "16px",
     width: "237px",
     height: "60px",
     padding: "17px 56px 25.86053466796875px 55px",
@@ -167,7 +183,7 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
         <div className="flex gap-24 justify-center mt-3 mr-10">
-          <div className="w-[303px] h-[357px]   p-10  border border-[1px] border-[#7A3199] rounded-[10px]">
+          <div className="w-[303px] h-[357px]   p-10  border border-[1px] border-[#7A3199] bg-[#ffffff]  rounded-[10px]">
             <h2 className="text-lg font-bold">Basic Plan</h2>
             <p className="text-sm mt-3">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -205,7 +221,7 @@ const LandingPage: React.FC = () => {
               Start Free Trial
             </button>
           </div>
-          <div className="w-[303px] h-[357px] p-10  border border-[1px] border-[#7A3199] rounded-[10px] ">
+          <div className="w-[303px] h-[357px] p-10  border border-[1px] border-[#7A3199] rounded-[10px] bg-[#ffffff] ">
             <h2 className="text-lg font-bold">Basic Plan</h2>
             <p className="text-sm mt-3">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -228,7 +244,7 @@ const LandingPage: React.FC = () => {
         </div>
       </div>
       {/* Fourth Section */}
-      <div className="flex justify-center">
+      <div className="container flex justify-center pb-20">
         <div className="flex  w-[75%]  mt-10  flex-col">
           <div>
             <h3 className="mb-2 mt-0 text-5xl font-bold leading-tight">
@@ -292,6 +308,33 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Fifth section */}
+
+      <div
+        className="container flex items-center flex-col mt-20"
+        style={footerStyle}
+      >
+        <div className="w-1/2 border border-[0.5px] border-[#7A3199] mt-10  text-center">
+          <div className="flex  items-center flex-col ">
+            <h4 className="text-4xl font-bold leading-tight">
+              We have what you&#39;re looking for
+            </h4>
+            <div className="w-5/6 text-sm text-[#8898ee] mt-8 ">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type a
+              </p>
+            </div>
+          </div>
+          <div className="mt-14">
+            <button style={startedNow}>Get Started Now</button>
+          </div>
+        </div>
+        <Footer />
       </div>
     </div>
   );
