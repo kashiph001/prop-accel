@@ -4,7 +4,7 @@ import logo from "../assets/Images/logo.png";
 const Header: React.FC = () => {
   return (
     <header className="bg-transparent py-4">
-      <nav className="flex justify-between items-center w-[75%] mx-auto">
+      <nav className="flex justify-between items-center w-[78%] mx-auto">
         <div>
           <img className="w-12" src={logo} alt="company-logo" />
         </div>
